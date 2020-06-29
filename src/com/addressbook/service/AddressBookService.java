@@ -49,7 +49,12 @@ public class AddressBookService
 
 	public void sortByFirstName()
 	{
-		this.personList.sort(Comparator.Comparing(e -> e.getName().toLowerCase()));
+		this.personList.sort(Comparator.Comparing(e -> e.getFirstName().toLowerCase()));
+	}
+
+	public void sortByLastName()
+	{
+		this.personList.sort(Comparator.Comparing(e -> e.getLastName().toLowerCase()));
 	}
 
 	public void sortByZipCode()
